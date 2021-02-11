@@ -1,18 +1,17 @@
 package com.crok.backend.model;
 
-import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Entity
-public class Filme implements Serializable {
+public class Filme  {
 	
-	@Id	@GeneratedValue
+	@Id	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private String titulo;

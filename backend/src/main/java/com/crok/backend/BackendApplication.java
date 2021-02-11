@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @SpringBootApplication
 public class BackendApplication {
 
-	@RequestMapping(value ="/filme", method = RequestMethod.GET)
+
 	public static void main(String[] args) {
 		SpringApplication.run(BackendApplication.class, args);
 	}
